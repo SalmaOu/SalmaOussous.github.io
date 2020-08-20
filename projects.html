@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/Salma oussous.png" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                Salma Oussous
+                <!--  <img src="img/Salma oussous.png"> -->
+            </span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="hello">
+                <h1>My projects</h1>
+            </div>
+            <div class="col-md-12" id="list_of_projects">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    WEB
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <!-- <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Company's name</th>
+                                            <th scope="col">Projetc's name</th>
+                                            <th scope="col">Length of project</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>CoupDeCoeur Immo</td>
+                                            <td>1 year</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>La Boutique des Eleveurs</td>
+                                            <td>6 months</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>PrestApp</td>
+                                            <td>1 month</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>Zimmer</td>
+                                            <td>1 month</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>Asia Market</td>
+                                            <td>2 weeks</td>
+                                        </tr>
+                                    </thead>
+                                </table> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    MOBILE
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <!-- <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Company's name</th>
+                                            <th scope="col">Projetc's name</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>CoupDeCoeur Immo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>La Boutique des Eleveurs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>PrestApp</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>Zimmer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>Bostik</td>
+                                        </tr>
+                                    </thead>
+                                </table> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    PWA
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <!-- <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Company's name</th>
+                                            <th scope="col">Projetc's name</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Aquil'App</td>
+                                            <td>Bostik</td>
+                                        </tr>
+                                    </thead>
+                                </table> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

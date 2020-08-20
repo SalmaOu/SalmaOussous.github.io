@@ -1,8 +1,41 @@
+body{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+a {
+    color: #212529;
+}
+
 .container {
     width: 80%;
+    margin-top: 50px;
     text-align: center;
 }
 
 #hello {
     border-bottom: 2px solid black;
+}
+
+#about_me{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: left;
+}
+
+#list_of_projects {
+    display: flex;
+    margin-top: 50px;
+    text-align: left; 
+    flex-direction: column;
+}
+
+#list_of_projects h5 button {
+    font-size: 30px;
+    color: white;
+}
+
+.card-header {
+    background-color: black;
 }
