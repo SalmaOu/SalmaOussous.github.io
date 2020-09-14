@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -10,58 +10,76 @@
     <link rel="icon" href="img/Salma oussous.png" />
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <span class="navbar-text">
-                <a href="https://linkedin.com/salmaoussous" target="_blank">Salma Oussous</a>
-            </span>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" id="hello">
-                <h1>Hello</h1>
+    <div class="container homepage_container">
+        <div class="row" id="header">
+            <div class="col-md-4" id="fullname">
+                <a href="about_me.html">
+                    <h1>Salma Oussous</h1>
+                </a>
             </div>
-            <div class="col-md-12" id="about_me">
-                <div class="card" style="width: 30rem;">
-                    <img class="card-img-top" src="img/Salma oussous.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Get to know me</h5>
-                        <p class="card-text">
-                        <ul>
-                            <!-- <li>Name : Salma Oussous </li>
-                            <li>Age : 22</li>
-                            <li>Job : Full-stack developer</li>
-                            <li><a href="https://github.com/SalmaOu" target="_blank">Github : https://github.com/SalmaOu/</a></li>
-                            <li>Hobbies : SLEEP and music</li> -->
-                        </ul>
-                        </p>
-                        <a href="projects.html" class="btn btn-primary">Have a look at my projects</a>
-                    </div>
+            <div class="col-md-4" id="portfolio">
+                Portfolio 20
+            </div>
+            <div class="col-md-4" id="freelance">
+                Freelancer
+            </div>
+        </div>
+        <div class="row" id="slider">
+            <div class="col-md-8" id="projects_slider">
+                <div class="col-md-4" id="project_details">
+                    <p id="name_project">La Boutique Des Eleveurs</p>
+                    <img src="img/black.PNG" id="img_project">
+                </div>
+                <div class="col-md-4" id="project_details">
+                    <p id="name_project">Coup de coeur Immo</p>
+                    <img src="img/black.PNG" id="img_project">
+                </div>
+                <div class="col-md-4" id="project_details">
+                    <p id="name_project">Asia Marché</p>
+                    <img src="img/black.PNG" id="img_project">
+                </div>
+                <div class="col-md-4" id="project_details">
+                    <p id="name_project">La Boutique Des Eleveurs</p>
+                    <img src="img/black.PNG" id="img_project">
+                </div>
+                <div class="col-md-4" id="project_details">
+                    <p id="name_project">La Boutique Des Eleveurs</p>
+                    <img src="img/black.PNG" id="img_project">
                 </div>
             </div>
         </div>
+        <div class="row" id="btn_more">
+            <div class="col-md-4">
+                <button data-target="#list_of_projects">View +</button>
+            </div>
+        </div>
+
+        <div class="row" id="list_of_projects">
+            <div style="border-bottom: 2px solid black;">
+                <h2>La boutique des Eleveurs</h2>
+                <ul id="work_done">
+                    <li>Mockup integration (Front-end)</li>
+                    <li>Module development (Back-end)</li>
+                </ul>
+            </div>
+            <div style="border-bottom: 2px solid black;">
+                <h2>Coup de coeur Immo</h2>
+                <ul id="work_done">
+                    <li>Development of APIs</li>
+                    <li>Module development (Back-end)</li>
+                </ul>
+            </div>
+        </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -72,7 +90,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/portfolio.js"></script>
 </body>
 
 
-</html>
+</html> -->
