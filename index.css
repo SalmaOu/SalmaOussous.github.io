@@ -6,13 +6,12 @@ body {
 :root {
     --primary: #555bff;
     --secondary: #22d2a0;
-    --background: white;
+    --background: black;
     --green: #1fc11b;
     --yellow: #ffd913;
     --orange: #ff9c55;
     --red: #ff5555;
 }
-
 
 #border_left {
     border-left: 5px solid black;
@@ -21,6 +20,10 @@ body {
 
 .slick-arrow {
     position: absolute;
+}
+
+.slick-arrow:hover {
+    cursor: pointer;
 }
 
 .left_arrow {
@@ -41,6 +44,37 @@ body {
     padding-bottom: 21px;
 }
 
+#me {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    right: 0;
+}/* 
+
+#fn {
+    position: absolute;
+    left: 4%;
+    bottom: 25%;
+}
+
+#age{
+    position: absolute;
+    left: 25%;
+    bottom: 1%;
+}
+
+#job{
+    position: absolute;
+    left: 45%;
+    top: 37%;
+}
+
+#links{
+
+}
+ */
 #me div {
     display: flex;
     justify-content: space-around;
@@ -48,12 +82,12 @@ body {
 
 #fullname a .go_back {
     position: absolute;
-    left: 169px;
+    left: 80px;
     top: -8px;
     font-size: 45px;
 }
 
-.card {
+.abt_me_card {
     background-color: var(--background);
     display: block;
     width: 300px;
@@ -67,11 +101,15 @@ body {
     transition: box-shadow 1s, top 1s, left 1s;
     position: relative;
     top: 0;
+    color: white;
     left: 0;
     cursor: pointer;
 }
 
-.card:hover {
+.abt_me_card a {
+    color: white;
+}
+.abt_me_card:hover {
     top: -40px;
     left: 40px;
     box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green), 0 0 0 -3px var(--background), 0 0 0 0 var(--yellow),
@@ -99,7 +137,7 @@ a {
 #slider {
     padding-top: 200px;
     display: flex;
-    margin: 133px;
+    /*     margin: 133px; */
     justify-content: center;
 }
 
@@ -108,10 +146,20 @@ a {
     justify-content: center;
 }
 
+#img_project {
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    width: 100%;
+    height: 386px;
+}
+
 #img_project:hover {
-    border-radius: 5px;
+    border-radius: 8px;
     opacity: 0.8;
     display: block;
+    position: absolute;
+    border-color: transparent;
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
 }
 
 #name_project {
@@ -124,7 +172,36 @@ a {
     left: 60px;
 }
 
+.project_card {
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    width: 18rem;
+    border-color: transparent;
+    height: 22rem;
+    margin: 10px;
+}
+
+.project_card:hover {
+    border-radius: 8px;
+    opacity: 0.8;
+    display: block;
+    border-color: transparent;
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+.project_card .card-title {
+    font-weight: 600;
+    text-align: center;
+}
+.project_card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#work_done {
+    border-left: 2px solid black;
+}
 #btn_more {
+    margin-top: 130px;
     display: flex;
     justify-content: center;
 }
@@ -132,7 +209,6 @@ a {
 button {
     background-color: transparent;
 }
-
 
 #hello {
     border-bottom: 2px solid black;
@@ -147,9 +223,11 @@ button {
 
 #list_of_projects {
     display: flex;
-    margin-top: 50px;
+    margin: 50px;
     text-align: left;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #list_of_projects h5 button {
@@ -157,7 +235,7 @@ button {
     color: white;
 }
 
-.card-header {
+.abt_me_card-header {
     background-color: black;
 }
 

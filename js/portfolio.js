@@ -8,6 +8,11 @@ $('#projects_slider').slick({
 });
 
 
-$('#img_project').on('hover', function(){
+$('#img_project').on('hover', function () {
   console.log("here");
+});
+
+$('#scroll_btn').on('click', function () {
+  var scrollToId = $(this).data("scroll");
+  var scrollToElement = document.getElementById(scrollToId);
 })
