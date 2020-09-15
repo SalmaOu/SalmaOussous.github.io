@@ -5,6 +5,33 @@ $('#projects_slider').slick({
   arrows: true,
   nextArrow: '<span class="material-icons right_arrow">chevron_right</span>',
   prevArrow: '<span class="material-icons left_arrow">chevron_left</span>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false
+      }
+    }
+  ]
 });
 
 
